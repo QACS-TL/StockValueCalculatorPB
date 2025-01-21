@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -8,6 +9,7 @@ namespace StockValueCalculator
 {
     public class Inventory
     {
+        private string s1 = "test";
         private List<Product> products = new List<Product>();
 
         public void AddProduct(string name, string authorArtist, int pagesTracks, decimal basePrice, string type)
